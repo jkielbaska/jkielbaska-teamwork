@@ -10,7 +10,7 @@ import { usePlanet } from "@/hooks/usePlanet";
 import { SpinningLoader } from "../loaders/SpinningLoader";
 
 export const PlanetPopup = ({ planetId }: { planetId: string }) => {
-  const { data } = usePlanet({
+  const { data, isError } = usePlanet({
     planetId,
   });
 
@@ -37,6 +37,8 @@ export const PlanetPopup = ({ planetId }: { planetId: string }) => {
             </ul>
           </DialogContent>
         </Dialog>
+      ) : isError ? (
+        <p className="text-red-500">Error</p>
       ) : (
         <SpinningLoader />
       )}
