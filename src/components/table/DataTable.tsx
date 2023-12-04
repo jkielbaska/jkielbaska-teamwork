@@ -87,7 +87,7 @@ export function DataTable({
             {isError ? (
               <div className="text-3xl">Something went wrong...</div>
             ) : (
-              <Table>
+              <Table className={`${isFetching && "blur-[1px] animate-pulse"}`}>
                 <TableHeader className="bg-zinc-700">
                   {table.getHeaderGroups().map((headerGroup) => (
                     <TableRow key={headerGroup.id}>
@@ -106,9 +106,7 @@ export function DataTable({
                     </TableRow>
                   ))}
                 </TableHeader>
-                <TableBody
-                  className={`${isFetching && "blur-[1px] animate-pulse"}`}
-                >
+                <TableBody>
                   {table.getRowModel().rows?.length ? (
                     table.getRowModel().rows.map((row) => (
                       <TableRow key={row.id} className="text-lg h-28">
