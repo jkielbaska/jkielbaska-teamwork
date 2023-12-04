@@ -106,7 +106,9 @@ export function DataTable({
                     </TableRow>
                   ))}
                 </TableHeader>
-                <TableBody>
+                <TableBody
+                  className={`${isFetching && "blur-[1px] animate-pulse"}`}
+                >
                   {table.getRowModel().rows?.length ? (
                     table.getRowModel().rows.map((row) => (
                       <TableRow key={row.id} className="text-lg h-28">
