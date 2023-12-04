@@ -74,7 +74,7 @@ export const columns: ColumnDef<Character>[] = [
   {
     accessorKey: "planetname",
     header: ({ column }) => (
-      <SortMenu sortString column={column} title={"Home"} />
+      <SortMenu sortString column={column} title={"Planet Name"} />
     ),
     cell: ({ row }) => {
       const homeworldUrlParts = row?.original?.homeworld
