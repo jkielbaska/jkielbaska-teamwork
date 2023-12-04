@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# teamwork recruitment task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello :)
 
-Currently, two official plugins are available:
+## How to run the code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/jkielbaska/jkielbaska-teamwork.git
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+cd jkielbaska-teamwork
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### If you want to run app in development mode
+
+```bash
+npm run dev
+```
+
+Go to [localhost:5173](http://localhost:5173/)
+
+### If you want to run app in preview production mode
+
+```bash
+npm run build
+npm run preview
+```
+
+Go to [localhost:4173](http://localhost:4173/)
+
+#### enjoy!
