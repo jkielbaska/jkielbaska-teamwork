@@ -1,13 +1,14 @@
-# teamwork recruitment task
+# StarWarsTable
 
 Hello :)
+This is simple project to remember how tanstack/react-query and tanstack/react-table works. Project is in React with Typescript.
 
 ## How to run the code
 
 ```bash
-git clone https://github.com/jkielbaska/jkielbaska-teamwork.git
+git clone https://github.com/jkielbaska/sw-table.git
 
-cd jkielbaska-teamwork
+cd sw-table
 npm install
 ```
 
